@@ -356,8 +356,16 @@ var dv_total_text = document.getElementById("dv_total");
 var intrinsic_text = document.getElementById("intrinsic");
 
 var instructions = document.getElementsByClassName("instructions");
-for(var i = 0; i < instructions.length; i++){
-    instructions[i].style.display = 'none';
+
+if(document.getElementById("instructions-switch").checked==true){	
+	for(var i = 0; i < instructions.length; i++){
+		instructions[i].style.display = 'inline';
+	}
+}
+else {
+	for(var i = 0; i < instructions.length; i++){
+		instructions[i].style.display = 'none';
+	}
 }
 
 
